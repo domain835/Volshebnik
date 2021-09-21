@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.svg" type="image/x-icon">
+  <title>Волшебник</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="info-panel">
+      <span class="info-panel__item">Работаем без выходных 24/7</span>
+      <span class="info-panel__item">+7 911 234 56 78</span>
+      <span class="info-panel__item">Санкт-Петербург, пр-кт Большой ПС, 7</span>
+    </div>
+
+    <header class="header">
+      <a class="header__logo" href="#" >
+        <img class="header__logo-img" src="images/logo.svg" alt="logo" >
+      </a>
+      <nav class="header__menu menu">
+        <h4 class="menu__title">Меню</h4>
+        <ul class="menu__list">
+          <li class="menu__item menu__item_active">
+            <a class="menu__list-link" href="#">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__list-link" href="#">Каталог</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__list-link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__list-link" href="#">Акции</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__list-link" href="#">Контакты</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__list-link" href="#">Войти в аккаунт</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__list-link" href="#">Подписаться на акции</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="second-menu">
+        <li class="second-menu__item">
+          <a class="second-menu__item-link" href="#">
+            <img class="second-menu__item-img white-icon" src="images/icon-heart.svg" alt="">
+            <img class="second-menu__item-img black-icon" src="images/icon-black-heart.svg" alt="">
+          </a>
+        </li>
+        <li class="second-menu__item">
+          <a class="second-menu__item-link" href="#">
+            <img class="second-menu__item-img white-icon" src="images/icon-cart.svg" alt="">
+            <img class="second-menu__item-img black-icon" src="images/icon-black-cart.svg" alt="">
+          </a>
+        </li>
+        <li class="second-menu__item">
+          <a class="second-menu__item-link" href="#">
+            <img class="second-menu__item-img white-icon" src="images/icon-user.svg" alt="">
+          </a>
+        </li>
+      </ul>
+      <div class="menu__icon">
+        <span></span>
+      </div>
+    </header>
+  
+  <div class="top__wrapper">
+    <section class="top">
+      <div class="container">
+  
+        <div class="top__inner">
+          <h1 class="top__title">
+            <span>МЫ СОБИРАЕМ</span>
+            <span>ВОЛШЕБНЫЕ</span> 
+            <span>БУКЕТЫ ДЛЯ ВАС</span>
+          </h1>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__item-link" href="#">
+                <img class="social__item-img" src="images/icon-facebook.svg" alt="">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__item-link" href="#">
+                <img class="social__item-img" src="images/icon-instagram.svg" alt="">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__item-link" href="#">
+                <img class="social__item-img" src="images/icon-telegram.svg" alt="">
+              </a>
+            </li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </div>
+        <a href="#" class="top__choice-btn">Выбрать букет <img class="top__choice-btn-img" src="images/btn-choice-bkg.svg" alt=""></a>
+        <a href="#" class="top__choice-btn black">Выбрать букет <img class="top__choice-btn-black" src="images/btn-choice-bkg-black.svg" alt=""></a>
+
+      </div>
+    </section>
+
+    <div class="top-slider ">
+      <div class="top-slider__item">
+        <img class="top-slider__img" src="images/slider-banner-1.jpg" alt="">
+      </div>
+      <div class="top-slider__item">
+        <img class="top-slider__img" src="images/slider-banner-1.jpg" alt="">
+      </div>
+      <div class="top-slider__item">
+        <img class="top-slider__img" src="images/slider-banner-1.jpg" alt="">
+      </div>
+      <div class="top-slider__item">
+        <img class="top-slider__img" src="images/slider-banner-1.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <section class="section section-catalog">
+    <div class="container">
+    <h2 class="section__title">Каталог</h2>
+    <nav class="catalog-nav">
+      <ul class="catalog-nav__items">
+        <li class="catalog-nav__item">
+          <button class="catalog-nav__btn active" type="button">Все</button>
+        </li>
+        <li class="catalog-nav__item">
+          <button class="catalog-nav__btn" type="button">1 сентября</button>
+        </li>
+        <li class="catalog-nav__item">
+          <button class="catalog-nav__btn" type="button">Розы</button>
+        </li>
+        <li class="catalog-nav__item">
+          <button class="catalog-nav__btn" type="button">Букеты</button>
+        </li>
+        <li class="catalog-nav__item">
+          <button class="catalog-nav__btn" type="button">Композиции</button>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="catalog">
+      <div class="catalog__item">
+        <div class="product">
+          <button class="product__like-btn liked" type="button"></button>
+          <img class="product__img" src="images/product-img.jpg" alt="" >
+          <div class="product__content">
+            <h3 class="product__title">Red box flowers</h3>
+            <span class="product__price">4500 ₽</span>
+          </div>
+          <footer class="product__footer">
+            <button class="product__to-kart-btn product__buttons" href="#">В корзину</button>
+            <button class="product__buy-btn product__buttons" href="#">Купить в 1 клик</button>
+          </footer>
+        </div>
+      </div>
+      <div class="catalog__item">
+        <div class="product">
+          <button class="product__like-btn" type="button"></button>
+          <img class="product__img" src="images/product-img.jpg" alt="" >
+          <div class="product__content">
+            <h3 class="product__title">Red box flowers</h3>
+            <span class="product__price">4500 ₽</span>
+          </div>
+          <footer class="product__footer">
+            <button class="product__to-kart-btn product__buttons" href="#">В корзину</button>
+            <button class="product__buy-btn product__buttons" href="#">Купить в 1 клик</button>
+          </footer>
+        </div>
+      </div>
+      <div class="catalog__item">
+        <div class="product">
+          <button class="product__like-btn" type="button"></button>
+          <img class="product__img" src="images/product-img.jpg" alt="" >
+          <div class="product__content">
+            <h3 class="product__title">Red box flowers</h3>
+            <span class="product__price">4500 ₽</span>
+          </div>
+          <footer class="product__footer">
+            <button class="product__to-kart-btn product__buttons" href="#">В корзину</button>
+            <button class="product__buy-btn product__buttons" href="#">Купить в 1 клик</button>
+          </footer>
+        </div>
+      </div>
+      <div class="catalog__item">
+        <div class="product">
+          <button class="product__like-btn" type="button"></button>
+          <img class="product__img" src="images/product-img.jpg" alt="" >
+          <div class="product__content">
+            <h3 class="product__title">Red box flowers</h3>
+            <span class="product__price">4500 ₽</span>
+          </div>
+          <footer class="product__footer">
+            <button class="product__to-kart-btn product__buttons" href="#">В корзину</button>
+            <button class="product__buy-btn product__buttons" href="#">Купить в 1 клик</button>
+          </footer>
+        </div>
+      </div>
+      <div class="catalog__item">
+        <div class="product">
+          <button class="product__like-btn" type="button"></button>
+          <img class="product__img" src="images/product-img.jpg" alt="" >
+          <div class="product__content">
+            <h3 class="product__title">Red box flowers</h3>
+            <span class="product__price">4500 ₽</span>
+          </div>
+          <footer class="product__footer">
+            <button class="product__to-kart-btn product__buttons" href="#">В корзину</button>
+            <button class="product__buy-btn product__buttons" href="#">Купить в 1 клик</button>
+          </footer>
+        </div>
+      </div>
+      <div class="catalog__item">
+        <div class="product">
+          <button class="product__like-btn" type="button"></button>
+          <img class="product__img" src="images/product-img.jpg" alt="" >
+          <div class="product__content">
+            <h3 class="product__title">Red box flowers</h3>
+            <span class="product__price">4500 ₽</span>
+          </div>
+          <footer class="product__footer">
+            <button class="product__to-kart-btn product__buttons" href="#">В корзину</button>
+            <button class="product__buy-btn product__buttons" href="#">Купить в 1 клик</button>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <button class="catalog__more-product-btn" type="button">Показать ещё +</button>
+  </div>
+  </section>
+  
+
+  <div class="banner">
+    <div class="banner__inner">
+      <h3 class="banner__title">Доставка и оплата</h3>
+      <p class="banner__text">Бесплатная доставка при заказе от 
+        2000 ₽ по Санкт-Петербургу</p>
+      <p class="banner__text">Доставка в Ленинградскую область бесплатно 
+        при заказе от 5000 ₽  </p>
+    </div>
+  </div>
+
+  <section class="section contacts">
+    <div class="container">
+      <h2 class="section__title">Контакты</h2>
+      
+      <div class="contacts__inner">
+        <div class="contacts__map"></div>
+        <div class="contacts__slider">
+          <div class="contacts__slider-item">
+            <img class="contacts__slider-img" src="images/contacts-slider-slide-1.jpg" alt="">
+          </div>
+          <div class="contacts__slider-item">
+            <img class="contacts__slider-img" src="images/contacts-slider-slide-1.jpg" alt="">
+          </div>
+          <div class="contacts__slider-item">
+            <img class="contacts__slider-img" src="images/contacts-slider-slide-1.jpg" alt="">
+          </div>
+          <div class="contacts__slider-item">
+            <img class="contacts__slider-img" src="images/contacts-slider-slide-1.jpg" alt="">
+          </div>
+        </div>
+        <ul class="contacts__list">
+          <li class="contacts__item contacts__location">Санкт-Петербург, пр-кт Большой ПС, 7</li>
+          <li class="contacts__item contacts__phone">+7 911 234 56 78</li>
+          <li class="contacts__item contacts__mail">volshebnik@flowers.ru</li>
+          <li class="contacts__item contacts__time">Круглосуточно, без выходных</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a class="logo" href="#" >
+          <img class="logo-link" src="images/logo.svg" alt="logo" >
+        </a>
+        <nav class="footer__menu">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <a class="footer__menu-list-link" href="#">Главная</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-list-link" href="#">Каталог</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-list-link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-list-link" href="#">Акции</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-list-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <form class="subscribe" action="">
+          <input class="subscribe__input" placeholder="Ваш e-mail" type="email">
+          <button  class="subscribe__button" type="submit">Подписаться</button>
+        </form>
+        <ul class="footer__social">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <img class="footer__social-img" src="images/footer-social-icon-facebook.svg" alt="">
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <img class="footer__social-img" src="images/footer-social-icon-instagram.svg" alt="">
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <img class="footer__social-img" src="images/footer-social-icon-telegram.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+  </div>
+</body>
+</html>

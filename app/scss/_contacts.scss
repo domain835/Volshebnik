@@ -1,0 +1,136 @@
+.contacts {
+
+  &__list {
+    background-color: #FAFAFA;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+    padding: 40px 20px 40px 40px;
+    border-radius: 5px;
+  }
+
+  &__location {
+    background: url('../images/icon-contacts-location.svg') no-repeat;
+    background-position: 3px center;
+  }
+
+  &__phone {
+    background: url('../images/icon-contacts-phone.svg') no-repeat;
+    background-position: 3px center;
+  }
+
+  &__mail {
+    background: url('../images/icon-contacts-mail.svg') no-repeat;
+    background-position: 0 center;
+  }
+
+  &__time {
+    background: url('../images/icon-contacts-time.svg') no-repeat;
+    background-position: 3px center;
+  }
+
+  &__item {
+    margin: 13px 0;
+    padding: 4px 33px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    position: relative;
+  }
+
+  &__map {
+    width: 630px;
+    height: 300px;
+    background: url('../images/map-bkg.jpg');
+  }
+
+  &__slider {
+    width: 542px;
+    height: 300px;
+
+    .slick-arrow {
+      position: absolute;
+      top: 50%;
+      z-index: 10;
+      transform: translateY(-50%);
+      height: 40px;
+      width: 40px;
+      padding: 5px;
+      cursor: pointer;
+      color: transparent;
+      border: 0;
+      outline: none;
+      background: transparent;
+    }
+  
+    .slick-prev {
+      left: 10px;
+      background: url('../images/contacts-slider-prev-arrow.svg');
+    }
+  
+    .slick-next {
+      right: 10px;
+      background: url('../images/contacts-slider-next-arrow.svg');
+    }
+  
+    .slick-dots {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      height: 10px;
+      bottom: 10px;
+  
+      li {
+        position: relative;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 0 2.5px;
+        border: 1px solid #fff;
+  
+        &.slick-active {
+          background-color: #fff;
+        }
+  
+  
+        button {
+          display: block;
+          height: 100%;
+          width: 100%;
+          padding: 5px;
+          cursor: pointer;
+          color: transparent;
+          border: 0;
+          outline: none;
+          background: transparent;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 480px) {
+
+  .contacts {
+
+    &__inner {
+      margin-top: 11px;
+    }
+  }
+}

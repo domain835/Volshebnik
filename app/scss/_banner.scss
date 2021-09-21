@@ -1,0 +1,49 @@
+.banner {
+  background: url('../images/delivery-banner-bkg.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 301px;
+  display: flex;
+  align-items: center;
+
+  &__inner {
+    margin-left: 645px;
+    color: #fff;
+  }
+
+  &__title {
+    font-family: 'Mak';
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+  }
+
+  &__text {
+    width: 309px;
+    line-height: 18px;
+    margin-top: 20px;
+  }
+}
+
+@media(max-width: 480px) {
+
+  .banner {
+    height: 119px;
+
+    &__inner {
+      margin-left: 118px;
+    }
+
+    &__title {
+      font-size: 16px;
+    }
+
+    &__text {
+      font-size: 10px;
+      width: 160px;
+      margin-top: 10px;
+      line-height: 11px;
+    }
+  }
+}
