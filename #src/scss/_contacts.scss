@@ -11,22 +11,22 @@
   }
 
   &__location {
-    background: url('../images/icon-contacts-location.svg') no-repeat;
+    background: url('../img/icon-contacts-location.svg') no-repeat;
     background-position: 3px center;
   }
 
   &__phone {
-    background: url('../images/icon-contacts-phone.svg') no-repeat;
+    background: url('../img/icon-contacts-phone.svg') no-repeat;
     background-position: 3px center;
   }
 
   &__mail {
-    background: url('../images/icon-contacts-mail.svg') no-repeat;
+    background: url('../img/icon-contacts-mail.svg') no-repeat;
     background-position: 0 center;
   }
 
   &__time {
-    background: url('../images/icon-contacts-time.svg') no-repeat;
+    background: url('../img/icon-contacts-time.svg') no-repeat;
     background-position: 3px center;
   }
 
@@ -56,7 +56,7 @@
   &__map {
     width: 630px;
     height: 300px;
-    background: url('../images/map-bkg.jpg');
+    background: url('../img/map-bkg.jpg');
   }
 
   &__slider {
@@ -80,12 +80,12 @@
   
     .slick-prev {
       left: 10px;
-      background: url('../images/contacts-slider-prev-arrow.svg');
+      background: url('../img/contacts-slider-prev-arrow.svg');
     }
   
     .slick-next {
       right: 10px;
-      background: url('../images/contacts-slider-next-arrow.svg');
+      background: url('../img/contacts-slider-next-arrow.svg');
     }
   
     .slick-dots {

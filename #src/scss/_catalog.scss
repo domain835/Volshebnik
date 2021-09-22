@@ -76,7 +76,7 @@
     }
 
     &::after {
-      content: url('../images/product-like-icon.svg');
+      content: url('../img/product-like-icon.svg');
       z-index: 10;
       position: absolute;
       top: 60%;
@@ -86,7 +86,7 @@
 
     &.liked {
       &::after {
-        content: url('../images/product-liked-icon.svg');
+        content: url('../img/product-liked-icon.svg');
         z-index: 10;
         position: absolute;
         top: 60%;

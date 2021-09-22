@@ -1,3 +1,5 @@
+@@include('alert.js');
+
 $(function () {
 
   $('.top-slider').slick({
