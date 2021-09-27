@@ -1,3 +1,15 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+@import 'mixins';
+
 @import 'vars';
 @import 'fonts';
 @import 'libs';
@@ -7,9 +19,50 @@
 @import 'catalog';
 @import 'banner';
 @import 'contacts';
+@import 'fonts';
 
+// Icon fonts
+@import 'icons';
 
+// Default font
+$fontFamily: "Philosopher";
+$fontSIze: 16;
 
+//Variables
+$minWidth: 320;
+$maxWIdth: 1440;
+$maxWidthContainer: calc(1280px + 30px);
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md2: 767.98;
+$md2: 479.98;
+
+$mainColor: #323232;
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  &._loaded {
+
+  }
+}
+
+._container {
+  max-width: $maxWidthContainer + px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+@import "forms";
+@import "ui";
+
+// @import "datepicker";
+// @import "lightgallery";
+// @import "pagging";
+@import "popup";
 
 html {
   box-sizing: border-box;
@@ -46,10 +99,10 @@ a {
 }
 
 body {
-  color: #323232;;
+  color: $mainColor;
   font-size: 16px;
   line-height: 18px;
-  font-family: 'Philosopher', sans-serif;
+  font-family: $fontFamily, sans-serif;
   font-weight: normal;
   max-width: 1440px;
   margin: 0 auto;

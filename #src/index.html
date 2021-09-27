@@ -9,13 +9,14 @@
 </head>
 <body>
   <div class="wrapper">
+    <main class="page"></main>
     <div class="info-panel">
       <span class="info-panel__item">Работаем без выходных 24/7</span>
       <span class="info-panel__item">+7 911 234 56 78</span>
       <span class="info-panel__item">Санкт-Петербург, пр-кт Большой ПС, 7</span>
     </div>
-    @@include('_header.html')
-  
+    @@include('_header.html', {})
+
   <div class="top__wrapper">
     <section class="top">
       <div class="container">
@@ -221,56 +222,8 @@
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <a class="logo" href="#" >
-          <img class="logo-link" src="img/logo.svg" alt="logo" >
-        </a>
-        <nav class="footer__menu">
-          <ul class="footer__menu-list">
-            <li class="footer__menu-item">
-              <a class="footer__menu-list-link" href="#">Главная</a>
-            </li>
-            <li class="footer__menu-item">
-              <a class="footer__menu-list-link" href="#">Каталог</a>
-            </li>
-            <li class="footer__menu-item">
-              <a class="footer__menu-list-link" href="#">Доставка и оплата</a>
-            </li>
-            <li class="footer__menu-item">
-              <a class="footer__menu-list-link" href="#">Акции</a>
-            </li>
-            <li class="footer__menu-item">
-              <a class="footer__menu-list-link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <form class="subscribe" action="">
-          <input class="subscribe__input" placeholder="Ваш e-mail" type="email">
-          <button  class="subscribe__button" type="submit">Подписаться</button>
-        </form>
-        <ul class="footer__social">
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="#">
-              <img class="footer__social-img" src="img/footer-social-icon-facebook.svg" alt="">
-            </a>
-          </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="#">
-              <img class="footer__social-img" src="img/footer-social-icon-instagram.svg" alt="">
-            </a>
-          </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="#">
-              <img class="footer__social-img" src="img/footer-social-icon-telegram.svg" alt="">
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-
+  @@include('_popup.html', {})
+  @@include('_footer.html', {})
   <script src="js/script.js"></script>
   </div>
 </body>
